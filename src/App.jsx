@@ -1,24 +1,15 @@
-import Footer from './components/footer'
-import Dropdown from './components/dropdown'
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import NavBar from './Components/NavBar'
+import AppRoutes from './AppRoutes'
+
 function App() {
   return (
-    <>
-      <div className="App row">
-        <div className="col-12">
-          <div className="text-center">
-            <h1>Report what you found or lost</h1>
-            <br />
-            <p>
-              <a href="#" className="btn btn-success btn-lg">
-                Get Started
-              </a>
-            </p>
-            <Dropdown></Dropdown>
-          </div>
-        </div>
-      </div>
-      <Footer></Footer>
-    </>
+    <Router>
+      <NavBar />
+      <AppRoutes />
+      {/* Other config */}
+    </Router>
   )
 }
 
