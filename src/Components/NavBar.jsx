@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
   return (
@@ -25,11 +25,16 @@ const NavigationBar = () => {
                 Contact Us
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/register" className="nav-link">
+                Register
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default NavigationBar;
+export default NavigationBar
